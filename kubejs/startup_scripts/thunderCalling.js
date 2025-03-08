@@ -17,13 +17,13 @@ global.handleThunder = (e) => {
           let setThunder = false;
           switch (season) {
             case "spring":
-              setThunder = roll <= 0.08;
+              setThunder = roll <= 0.06;
               break;
             case "summer":
-              setThunder = roll <= 0.15;
+              setThunder = roll <= 0.1                                 ;
               break;
             case "autumn":
-              setThunder = roll <= 0.05;
+              setThunder = roll <= 0.03;
               break;
             default:
               break;

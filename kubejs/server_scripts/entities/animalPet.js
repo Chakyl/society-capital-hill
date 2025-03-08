@@ -16,7 +16,7 @@ const petGifts = new Map([
 ItemEvents.entityInteracted((e) => {
   const { hand, player, level, target, server } = e;
   if (hand == "OFF_HAND") return;
-  if (!global.petAnimals.includes(target.type)) return;
+  if (!global.checkEntityTag(target, "society:pet_animal")) return;
   if (hand == "MAIN_HAND") {
     const data = target.persistentData;
     let possibleGifts

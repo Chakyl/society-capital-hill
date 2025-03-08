@@ -1,7 +1,7 @@
 {
   "profession": "minecraft:toolsmith",
   "removeOtherTrades": true,
-  "maxTrades": 30,
+  "maxTrades": 34,
   "trades": [
     {
       "offer": {
@@ -15,7 +15,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -33,7 +33,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -51,7 +51,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -69,7 +69,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -87,7 +87,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -95,7 +95,43 @@
     },
     {
       "offer": {
+        "itemKey": "minecraft:redstone",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:bevel",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:toolsmith_redstone_for_bevel"
+    },
+    {
+      "offer": {
         "itemKey": "minecraft:flint_and_steel",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:toolsmith_flint_and_steel_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "society:iron_upgrade_smithing_template",
         "amount": 1,
         "priceModifier": 0
       },
@@ -109,7 +145,43 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:toolsmith_flint_and_steel_for_crown"
+      "UTID": "minecraft:iron_upgrade_smithing_template_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:gold_upgrade_smithing_template",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:gold_upgrade_smithing_template_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:diamond_upgrade_smithing_template",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:diamond_upgrade_smithing_template_for_sun"
     },
     {
       "offer": {
@@ -119,7 +191,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 16,
+        "amount": 22,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -223,29 +295,6 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:toolsmith_bin_for_sun_0"
-    },
-    {
-      "offer": {
-        "itemKey": "society:galaxy_sword",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "minecraft:netherite_sword",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "additionalRequest": {
-        "itemKey": "society:prismatic_shard",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:toolsmith_galaxy_sword_for_netherite_sword_0"
     },
     {
       "offer": {

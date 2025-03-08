@@ -748,11 +748,43 @@
 						value: "botania:functional_special_flowers"
 					}
 				}
-				title: "Any #botania:functional_special_flowers"
+				title: "Any Functional Flower"
 				type: "item"
 			}]
 			title: "Functional Flora"
-			x: 10.5d
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["33B78DFDDC041570"]
+			description: [
+				"The Cropnolia is a passive way of getting \"free\" mana, but it has the downside of being excrutiatingly slow. You should look to diversifying the ways you create mana."
+				""
+				"&6Generating Flora&r are classified as magical flowers that create mana through various means."
+				""
+				"The &6Lexica Botania&r will have information on all the different types."
+			]
+			icon: "botania:kekimurus"
+			id: "01D4F1073804E77C"
+			rewards: [{
+				id: "16A4A1134A54A0A3"
+				item: "society:botanical_tribute"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1180F9F0BBAF4E30"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:generating_special_flowers"
+					}
+				}
+				title: "Any Generating Flower"
+				type: "item"
+			}]
+			title: "Generating Flora"
+			x: 6.0d
 			y: 1.5d
 		}
 	]

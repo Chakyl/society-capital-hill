@@ -453,7 +453,7 @@
 	/**
 	 * Whether editing the index is enabled
 	 */
-	edit-mode: true;
+	edit-mode: false;
 
 	/**
 	 * Whether to log untranslated tags as warnings.

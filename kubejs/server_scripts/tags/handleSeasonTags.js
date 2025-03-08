@@ -214,6 +214,9 @@ const autumnCrops = [
   "pamhc2trees:pampawpaw",
   "pamhc2trees:pawpaw_sapling",
   "pamhc2trees:pawpawitem",
+  "pamhc2trees:hazelnut_sapling",
+  "pamhc2trees:pamhazelnut",
+  "pamhc2trees:hazelnutitem",
 ];
 const winterCrops = [
   "farm_and_charm:barley_crop",

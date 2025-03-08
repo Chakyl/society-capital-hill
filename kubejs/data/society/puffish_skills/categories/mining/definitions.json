@@ -1,6 +1,6 @@
 {
-  "fortune+0.5": {
-    "title": "+0.5 Fortune",
+  "fortune+1": {
+    "title": "+I Fortune",
     "icon": {
       "type": "item",
       "data": {
@@ -11,15 +11,15 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "puffish_skills:player.fortune",
-          "value": 0.5,
+          "attribute": "puffish_skills:fortune",
+          "value": 1,
           "operation": "addition"
         }
       }
     ]
   },
-  "pickaxe_speed+5%": {
-    "title": "+5% Pickaxe Speed",
+  "pickaxe_efficiency+1": {
+    "title": "+I Pickaxe Efficiency",
     "icon": {
       "type": "item",
       "data": {
@@ -30,9 +30,28 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "puffish_skills:player.pickaxe_speed",
-          "value": 0.05,
+          "attribute": "puffish_attributes:pickaxe_speed",
+          "value": 1,
           "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "melee_damage+2": {
+    "title": "+2 Melee Damage",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "iron_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 2,
+          "operation": "addition"
         }
       }
     ]
@@ -182,7 +201,7 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "puffish_skills:player.fortune",
+          "attribute": "puffish_skills:fortune",
           "value": 4,
           "operation": "addition"
         }

@@ -38,7 +38,7 @@
         },
         "tool": {
           "type": "sewingkit:tool_ingredient",
-          "tool_level": "minecraft:wood",
+          "tool_level": "minecraft:iron",
           "tool_type": "sewingkit_sew"
         }
       }

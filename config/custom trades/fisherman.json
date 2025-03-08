@@ -1,7 +1,7 @@
 {
   "profession": "minecraft:fisherman",
   "removeOtherTrades": true,
-  "maxTrades": 30,
+  "maxTrades": 32,
   "trades": [
     {
       "offer": {
@@ -78,7 +78,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:fisherman_fishing_rod_for_crown"
+      "UTID": "minecraft:fisherman_fish_radar_for_crown"
     },
     {
       "offer": {
@@ -333,6 +333,24 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:fisherman_worm_farm_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "society:neptunium_upgrade_smithing_template",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 32,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:toolsmith_neptunium_upgrade_smithing_template_for_crown"
     },
     {
       "offer": {

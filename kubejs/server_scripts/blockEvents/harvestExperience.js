@@ -5,6 +5,7 @@ const deniedCrops = [
   "farmersdelight:budding:tomatoes",
   "minecraft:melon_stem",
   "minecraft:pumpkin_stem",
+  "minecraft:cocoa"
 ];
 const farmlands = [
   "minecraft:farmland",

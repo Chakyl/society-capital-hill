@@ -1,12 +1,12 @@
 {
   "0_0": {
-    "definition": "pickaxe_speed+5%",
+    "definition": "pickaxe_efficiency+1",
     "x": -352,
     "y": 0,
     "root": true
   },
   "1eou8gnd83878p5e": {
-    "definition": "fortune+0.5",
+    "definition": "fortune+1",
     "x": -288,
     "y": 0,
     "root": false
@@ -24,7 +24,7 @@
     "root": false
   },
   "t6jczu8hod1e8r28": {
-    "definition": "fortune+0.5",
+    "definition": "pickaxe_efficiency+1",
     "x": -160,
     "y": 0,
     "root": false
@@ -48,13 +48,13 @@
     "root": false
   },
   "0499r2vp4yla73sg": {
-    "definition": "fortune+0.5",
+    "definition": "fortune+1",
     "x": 160,
     "y": -96,
     "root": false
   },
   "mgeo0gxvg0iejoau": {
-    "definition": "fortune+0.5",
+    "definition": "melee_damage+2",
     "x": 288,
     "y": -96,
     "root": false
@@ -96,25 +96,25 @@
     "root": false
   },
   "szobawq1ces4hal3": {
-    "definition": "fortune+0.5",
+    "definition": "fortune+1",
     "x": 160,
     "y": 96,
     "root": false
   },
   "z81w5p5pcbi4stnl": {
-    "definition": "fortune+0.5",
+    "definition": "melee_damage+2",
     "x": 288,
     "y": 96,
     "root": false
   },
   "wa0j12xpyi24dupd": {
-    "definition": "pickaxe_speed+5%",
+    "definition": "pickaxe_efficiency+1",
     "x": 224,
     "y": -96,
     "root": false
   },
   "kczu6ykt9gorlezg": {
-    "definition": "pickaxe_speed+5%",
+    "definition": "pickaxe_efficiency+1",
     "x": 224,
     "y": 96,
     "root": false
@@ -126,19 +126,19 @@
     "root": false
   },
   "dejxcfevtht015xs": {
-    "definition": "pickaxe_speed+5%",
+    "definition": "melee_damage+2",
     "x": -224,
     "y": 0,
     "root": false
   },
   "62kcjzuyvbpubwzj": {
-    "definition": "pickaxe_speed+5%",
+    "definition": "melee_damage+2",
     "x": -32,
     "y": -96,
     "root": false
   },
   "zqftrcet3ijp0a3r": {
-    "definition": "pickaxe_speed+5%",
+    "definition": "melee_damage+2",
     "x": -32,
     "y": 96,
     "root": false

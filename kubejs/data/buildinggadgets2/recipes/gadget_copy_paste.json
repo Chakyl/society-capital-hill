@@ -10,7 +10,7 @@
       "tag": "forge:ingots/zinc"
     },
     "B": {
-      "item": "create_connected:copycat_block"
+      "item":"copycats:copycat_block"
     },
     "c": {
       "item": "buildinggadgets2:gadget_core"

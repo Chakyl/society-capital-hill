@@ -1,0 +1,3 @@
+#If enabled innate spells won't be added to the selection if an equally or more powerful spell of the same type is already present
+skip_innate = false
+

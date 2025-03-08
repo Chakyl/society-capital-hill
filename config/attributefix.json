@@ -66,6 +66,17 @@
         "value": 8
       }
     },
+    "additional_attributes:respiration": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "minecraft:generic.luck": {
       "enabled": true,
       "min": {
@@ -154,7 +165,29 @@
         "value": 1024
       }
     },
+    "additional_attributes:harvest": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "reforgingstation:projectile_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "additional_attributes:fishing_luck": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -495,8 +528,30 @@
         "value": 1024
       }
     },
+    "additional_attributes:fishing_lure": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "minecraft:generic.flying_speed": {
       "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "additional_attributes:looting": {
+      "enabled": false,
       "min": {
         "default": 0,
         "value": 0

@@ -35,7 +35,7 @@ const initializeFarmAnimal = (data, target, level) => {
   if (!data.getInt("ageLastBred")) data.ageLastBred = level.time;
   if (
     !data.getInt("ageLastMilked") &&
-    global.milkableAnimals.includes(target.type)
+    global.checkEntityTag(target, "society:milkable_animal")
   )
     data.ageLastMilked = level.time;
 };
@@ -51,20 +51,6 @@ const loginResetFarmAnimal = (target, level, interactionCooldown) => {
     data.ageLastBred = level.time - interactionCooldown;
     data.ageLastFed = level.time - interactionCooldown;
   }
-};
-
-const getMilk = (hearts, type, warped) => {
-  let size = "";
-  let resolvedType = "";
-  if (hearts > 5) {
-    size = "large_";
-  }
-  if (type === "mammutilation") return "species:ichor_bottle";
-  if (type === "goat") resolvedType = type;
-  if (type.includes("sheep")) resolvedType = "sheep";
-  if (warped) resolvedType = "warped";
-  if (type === "water buffalo") resolvedType = "buffalo";
-  return `${size}${resolvedType}${resolvedType === "" ? "" : "_"}milk`;
 };
 
 const handlePet = (
@@ -106,7 +92,7 @@ const handlePet = (
     data.affection = affection + affectionIncrease;
 
     if (hungry || (!data.clockwork && player.isFake()) || !livableArea) {
-      affectionIncrease = 0
+      affectionIncrease = 0;
       data.affection = affection - (hungry ? 25 : 50);
     }
     data.ageLastPet = level.time;
@@ -223,49 +209,22 @@ const handlePet = (
 const handleMilk = (name, type, data, interactionCooldown, hungry, e) => {
   const { player, item, target, level, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
-  const ageLastMilked = data.getInt("ageLastMilked");
   const capitalizedType = type.charAt(0).toUpperCase() + type.slice(1);
-  const affection = data.getInt("affection");
-  let hearts = Math.floor(affection / 100);
-  const freshAnimal = global.isFresh(
-    level.time,
-    ageLastMilked,
+  let errorText;
+  let milkItem = global.getMilk(
+    level,
+    target,
+    data,
+    player,
     interactionCooldown
   );
-  const affectionIncrease =
-    player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
-  let errorText;
-  let warped = false;
-  let quality = 0;
 
-  if (type === "wooly cow" && Number(target.getNbt().Variant) === 2) {
-    warped = true;
-  }
-  if (
-    !target.isBaby() &&
-    !hungry &&
-    (freshAnimal || level.time - ageLastMilked > interactionCooldown)
-  ) {
-    debug &&
-      player.tell(`Increased Affection by: ${affectionIncrease} from milking`);
-    data.affection = affection + affectionIncrease;
-    data.ageLastMilked = level.time;
-    if (hearts >= 10 || (hearts > 0 && hearts % 5 === 0)) {
-      quality = 3;
-    } else {
-      quality = (hearts % 5) - 2;
-    }
+  if (milkItem !== -1) {
     let milk = level.createEntity("minecraft:item");
-    let milkId = getMilk(hearts, type, warped);
     milk.x = player.x;
     milk.y = player.y;
     milk.z = player.z;
-    milk.item = Item.of(
-      `${player.stages.has("shepherd") ? 2 : 1}x ${
-        milkId.includes(":") ? milkId : `society:${milkId}`
-      }`,
-      quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
-    );
+    milk.item = milkItem;
     milk.spawn();
     server.runCommandSilent(
       `playsound minecraft:entity.cow.milk block @a ${player.x} ${player.y} ${player.z}`
@@ -412,9 +371,9 @@ const handleMagicHarvest = (name, type, data, interactionCooldown, e) => {
 
 ItemEvents.entityInteracted((e) => {
   const { hand, player, item, target, level, server } = e;
-  const pet = global.petAnimals.includes(target.type);
+  const pet = global.checkEntityTag(target, "society:pet_animal");
   if (hand == "OFF_HAND") return;
-  if (!global.husbandryAnimals.includes(target.type) && !pet) return;
+  if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
   const interactionCooldown = 12000;
   loginResetFarmAnimal(target, level, interactionCooldown);
 
@@ -439,7 +398,7 @@ ItemEvents.entityInteracted((e) => {
         handleFeed(data, interactionCooldown, e);
       if (
         item === "society:milk_pail" &&
-        global.milkableAnimals.includes(target.type)
+        global.checkEntityTag(target, "society:milkable_animal")
       ) {
         let timeMult = 1;
         if (

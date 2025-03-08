@@ -94,8 +94,8 @@ global.getPigColor = (pig) => {
 };
 
 global.calculateCoinsFromValue = (price, output) => {
-  for (let i = 0; i < coinMap.length; i++) {
-    let { coin, value } = coinMap[i];
+  for (let i = 0; i < global.coinMap.length; i++) {
+    let { coin, value } = global.coinMap[i];
     if (value <= price) {
       if (price % value === 0) {
         output.push({ id: coin, count: price / value });

@@ -36,28 +36,7 @@ StartupEvents.registry("block", (event) => {
           nearbyFarmAnimals = level
             .getEntitiesWithin(AABB.ofBlock(block).inflate(6))
             .filter((entity) =>
-              [
-                "minecraft:cow",
-                "minecraft:goat",
-                "minecraft:sheep",
-                "minecraft:pig",
-                "minecraft:panda",
-                "snowpig:snow_pig",
-                "minecraft:rabbit",
-                "meadow:wooly_cow",
-                "meadow:water_buffalo",
-                "meadow:wooly_sheep",
-                "minecraft:chicken",
-                "untitledduckmod:duck",
-                "untitledduckmod:goose",
-                "autumnity:turkey",
-                "autumnity:snail",
-                "minecraft:mooshroom",
-                "buzzier_bees:moobloom",
-                "minecraft:sniffer",
-                "etcetera:chapple",
-                "species:mammutilation",
-              ].includes(entity.type)
+              global.checkEntityTag(entity, "society:husbandry_animal")
             );
           nearbyFarmAnimals.forEach((animal) => {
             let data = animal.persistentData;

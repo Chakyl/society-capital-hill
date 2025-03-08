@@ -1,24 +1,24 @@
 {
   "halazz9no9tuj69h": {
-    "definition": "axe_speed+5%",
+    "definition": "axe_efficiency+1",
     "x": -352,
     "y": 0,
     "root": true
   },
   "hffozx77ny39afuc": {
-    "definition": "shovel_speed+5%",
+    "definition": "shovel_efficiency+1",
     "x": -288,
     "y": 0,
     "root": false
   },
   "kwza91wdu4sl7xwk": {
-    "definition": "axe_speed+5%",
+    "definition": "speed+5%",
     "x": -224,
     "y": 0,
     "root": false
   },
   "lv0aeudpbqjne42u": {
-    "definition": "shovel_speed+5%",
+    "definition": "axe_efficiency+1",
     "x": -160,
     "y": 0,
     "root": false
@@ -36,13 +36,13 @@
     "root": false
   },
   "bjcjb4403pno8fe5": {
-    "definition": "shovel_speed+5%",
+    "definition": "shovel_efficiency+1",
     "x": -32,
     "y": -96,
     "root": false
   },
   "nrs9akegt3qry2et": {
-    "definition": "shovel_speed+5%",
+    "definition": "shovel_efficiency+1",
     "x": -32,
     "y": 96,
     "root": false
@@ -84,37 +84,37 @@
     "root": false
   },
   "h4lrzzh35pep0hg3": {
-    "definition": "axe_speed+5%",
+    "definition": "speed+5%",
     "x": 160,
     "y": -96,
     "root": false
   },
   "0183gs1xq9lt1jp9": {
-    "definition": "axe_speed+5%",
+    "definition": "speed+5%",
     "x": 160,
     "y": 96,
     "root": false
   },
   "b2sxtrylpusqlqvr": {
-    "definition": "axe_speed+5%",
+    "definition": "shovel_efficiency+1",
     "x": 288,
     "y": -96,
     "root": false
   },
   "0eryurvldprgl1ny": {
-    "definition": "axe_speed+5%",
+    "definition": "shovel_efficiency+1",
     "x": 288,
     "y": 96,
     "root": false
   },
   "fhjpbl3k02rmtldx": {
-    "definition": "shovel_speed+5%",
+    "definition": "axe_efficiency+1",
     "x": 224,
     "y": 96,
     "root": false
   },
   "bdyntqj791256tjg": {
-    "definition": "shovel_speed+5%",
+    "definition": "axe_efficiency+1",
     "x": 224,
     "y": -96,
     "root": false

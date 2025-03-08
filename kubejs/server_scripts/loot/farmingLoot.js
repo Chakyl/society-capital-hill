@@ -9,7 +9,6 @@ const cropList = [
   "minecraft:torchflower_crop",
   "minecraft:pitcher_crop",
   "minecraft:beetroots",
-  "minecraft:cocoa",
   "minecraft:bamboo",
   "snowyspirit:ginger",
   "supplementaries:flax",

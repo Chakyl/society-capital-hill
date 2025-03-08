@@ -54,7 +54,7 @@ const handleSpecialItem = (
 ItemEvents.entityInteracted((e) => {
   const { hand, player, item, level, target } = e;
   if (hand == "OFF_HAND") return;
-  if (!global.husbandryAnimals.includes(target.type)) return;
+  if (!global.checkEntityTag(target, "society:husbandry_animal")) return;
   if (hand == "MAIN_HAND") {
     const interactionCooldown = 12000;
     const data = target.persistentData;
@@ -188,11 +188,10 @@ ItemEvents.entityInteracted((e) => {
           e
         );
       }
-      if (global.largeEggAnimals.includes(target.type)) {
+      if (global.checkEntityTag(target, "society:large_egg_animal")) {
         let eggType = String(target.type).split(":")[1];
-
         handleSpecialItem(
-          data,
+        data,
           1,
           hungry,
           4,
@@ -214,7 +213,7 @@ ItemEvents.entityInteracted((e) => {
       ) {
         handleSpecialItem(
           data,
-          0.2,
+          0.02,
           hungry,
           1,
           1,

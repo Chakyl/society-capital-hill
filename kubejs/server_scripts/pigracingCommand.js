@@ -19,7 +19,7 @@ ServerEvents.commandRegistry((event) => {
       "numismatics:ancient_coin",
     ];
     const bet = player.offHandItem;
-    const betPigName = String(pig).charAt(0).toUpperCase() + String(pig).slice(1);
+    const betPigName = String(pig.toLowerCase()).charAt(0).toUpperCase() + String(pig.toLowerCase()).slice(1);
     let betValue
     if (!raceData.pigraceInProgress) {
       player.tell(

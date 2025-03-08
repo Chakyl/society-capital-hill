@@ -31,19 +31,25 @@
 		{
 			dependencies: ["3862A7D1A471A215"]
 			description: [
-				"Unlike normal, upgrading your tools requires &6Coins&r. To compensate, every tool has twice the durability and can be repaired in an anvil infinitely."
+				"Unlike normal, upgrading your tools requires a &6Smithing Table&r. At higher tiers it will require a Smithing Template either crafted or purchased from a &6Blacksmith Villager&r"
 				""
-				"Enchantments also carry over when upgrading!"
+				"Tools can be repaired in an anvil infinitely, and enchantments also carry over when upgrading!"
 				""
 				"Search for an item in the item list sidebar and hit &6r&r or &6Left Click&r to see its recipes."
 			]
 			id: "1E5531421815CDB3"
-			rewards: [{
-				count: 7
-				id: "6D73D8DD6C2B28DE"
-				item: "numismatics:bevel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1402E5011DF54D5C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "137899E474E8FB04"
+					item: "minecraft:smithing_table"
+					type: "item"
+				}
+			]
 			tasks: [{
 				icon: {
 					Count: 1

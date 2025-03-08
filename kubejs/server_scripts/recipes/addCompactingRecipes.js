@@ -23,6 +23,7 @@ ServerEvents.recipes((e) => {
   compact("society:eggplant_crate", "society:eggplant", 9);
   compact("society:tubabacco_leaf_block", "society:tubabacco_leaf", 9);
   compact("society:tubasmoke_carton", "society:tubasmoke_stick", 9);
+  compact("society:sturdy_bamboo_block", "minecraft:bamboo_block", 9);
  
   compact("numismatics:ancient_coin", "numismatics:sun", 62);
   compact("numismatics:prismatic_coin", "numismatics:ancient_coin", 64);

@@ -1,7 +1,7 @@
 {
   "profession": "minecraft:weaponsmith",
   "removeOtherTrades": true,
-  "maxTrades": 30,
+  "maxTrades": 64,
   "trades": [
     {
       "offer": {
@@ -28,7 +28,7 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:crown",
+        "itemKey": "numismatics:sun",
         "amount": 1,
         "priceModifier": 0
       },
@@ -37,7 +37,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_storage_controller_for_crown"
+      "UTID": "minecraft:weaponsmith_storage_controller_for_sun"
     },
     {
       "offer": {
@@ -47,7 +47,7 @@
       },
       "request": {
         "itemKey": "numismatics:crown",
-        "amount": 1,
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -56,6 +56,78 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:weaponsmith_controller_extension_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:simple_compacting_drawer",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_simple_compacting_drawer_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:compacting_drawer",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_compacting_drawer_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:configuration_tool",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_configuration_tool_for_sprocket"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:linking_tool",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_linking_tool_for_sprocket"
     },
     {
       "offer": {
@@ -155,7 +227,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 4,
+        "amount": 8,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -208,8 +280,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:crown",
-        "amount": 1,
+        "itemKey": "numismatics:sun",
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -217,7 +289,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.storage_terminal_for_crown"
+      "UTID": "minecraft:weaponsmith_ts.storage_terminal_for_sun"
     },
     {
       "offer": {
@@ -226,8 +298,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:crown",
-        "amount": 4,
+        "itemKey": "numismatics:sun",
+        "amount": 2,
         "priceModifier": 0
       },
       "additionalRequest": {
@@ -240,7 +312,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.crafting_terminal_for_crown"
+      "UTID": "minecraft:weaponsmith_ts.crafting_terminal_for_sun"
     },
     {
       "offer": {
@@ -300,6 +372,114 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:weaponsmith_ts.paint_kit_for_bevel"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:basic_tier_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_basic_tier_upgrade_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:basic_to_copper_tier_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_basic_to_copper_tier_upgrade_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:copper_to_iron_tier_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_copper_to_iron_tier_upgrade_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:iron_to_gold_tier_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_iron_to_gold_tier_upgrade_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:gold_to_diamond_tier_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_gold_to_diamond_tier_upgrade_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:diamond_to_netherite_tier_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_diamond_to_netherite_tier_upgrade_for_sun"
     },
     {
       "offer": {
@@ -426,6 +606,60 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:weaponsmith_stack_upgrade_tier_5_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:packing_tape",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_packing_tape_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:decoration_table",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_decoration_table_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:paintbrush",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_paintbrush_for_crown"
     }
   ]
 }

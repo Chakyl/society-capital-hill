@@ -10,7 +10,7 @@ EntityEvents.death((e) => {
     if (sacrificeAffection < 200) return;
     let witnesses = level
       .getEntitiesWithin(source.player.boundingBox.inflate(8))
-      .filter((entity) => global.husbandryAnimals.includes(entity.type));
+      .filter((entity) => global.checkEntityTag(entity.type, "society:husbandry_animal"));
     server.runCommandSilent(
       `playsound legendarycreatures:corpse_eater_death block @a ${source.player.x} ${source.player.y} ${source.player.z}`
     );

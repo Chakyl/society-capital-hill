@@ -1,0 +1,13 @@
+{
+  "filters": [
+    {
+      "category": "waystones:warp_plate"
+    },
+    {
+      "category": "farm_and_charm:cooking_pot"
+    },
+    {
+      "category": "meadow:woodcutting"
+    }
+  ]
+}

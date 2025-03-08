@@ -1,6 +1,6 @@
 {
-  "axe_speed+5%": {
-    "title": "+5% Axe Speed",
+  "axe_efficiency+1": {
+    "title": "+I Axe Efficiency",
     "icon": {
       "type": "item",
       "data": {
@@ -11,15 +11,15 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "puffish_skills:player.axe_speed",
-          "value": 0.05,
+          "attribute": "puffish_attributes:axe_speed",
+          "value": 1,
           "operation": "multiply_base"
         }
       }
     ]
   },
-  "shovel_speed+5%": {
-    "title": "+5% Shovel Speed",
+  "shovel_efficiency+1": {
+    "title": "+I Shovel Efficiency",
     "icon": {
       "type": "item",
       "data": {
@@ -30,9 +30,28 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "puffish_skills:player.shovel_speed",
-          "value": 0.05,
+          "attribute": "puffish_attributes:shovel_speed",
+          "value": 1,
           "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "speed+5%": {
+    "title": "+5% Movement Speed",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "vinery:lava_walker"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.movement_speed",
+          "value": 0.05,
+          "operation": "multiply_total"
         }
       }
     ]

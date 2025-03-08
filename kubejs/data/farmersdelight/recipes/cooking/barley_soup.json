@@ -13,7 +13,7 @@
       "tag": "farm_and_charm:water_bottles"
     },
     {
-      "item": "minecraft:egg"
+      "tag": "forge:eggs"
     }
   ],
   "container": {

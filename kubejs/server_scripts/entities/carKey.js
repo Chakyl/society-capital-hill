@@ -8,12 +8,12 @@ BlockEvents.rightClicked((e) => {
     player.potionEffects.isActive("brewery:blackout");
     
   if (!playerDrunk && item.nbt && block) {
-    let reward = e.player.level.createEntity("automobility:automobile");
+    let car = e.player.level.createEntity("automobility:automobile");
     item.nbt.Pos[0] = Number(block.getX());
     item.nbt.Pos[1] = Number(block.getY() + 2);
     item.nbt.Pos[2] = Number(block.getZ());
-    reward.nbt = item.nbt;
-    reward.spawn();
+    car.nbt = item.nbt;
+    car.spawn();
     item.nbt = null;
   } else if (playerDrunk) {
     player.tell(

@@ -2,11 +2,11 @@
   "type": "vintagedelight:fermenting",
   "processingTime": 10000,
   "ingredients": [
-    {"tag": "vintagedelight:slime_ball_fermenting"},
-    {"tag": "vintagedelight:slime_ball_fermenting"},
-    {"tag": "vintagedelight:slime_ball_fermenting"},
-    {"tag": "vintagedelight:slime_ball_fermenting"},
-    {"tag": "vintagedelight:slime_ball_fermenting"},
+    {"tag": "minecraft:leaves"},
+    {"tag": "minecraft:leaves"},
+    {"tag": "minecraft:leaves"},
+    {"tag": "minecraft:leaves"},
+    {"tag": "minecraft:leaves"},
     {"tag": "forge:salt"}
   ],
   "output": {

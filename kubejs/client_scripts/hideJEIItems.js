@@ -1,6 +1,8 @@
 JEIEvents.hideItems((e) => {
   const hiddenItems = [
     // Twigs
+    "botania:pebble",
+    "decorative_blocks:rocky_dirt",
     "twigs:polished_tuff",
     "twigs:polished_calcite_brick_wall",
     "twigs:polished_calcite_brick_stairs",
@@ -143,6 +145,16 @@ JEIEvents.hideItems((e) => {
     "crafting_on_a_stick:chipped_anvil",
     "crafting_on_a_stick:damaged_anvil",
     "sophisticatedbackpacks:anvil_upgrade",
+    "sophisticatedstorage:basic_to_iron_tier_upgrade",
+    "sophisticatedstorage:basic_to_diamond_tier_upgrade",
+    "sophisticatedstorage:gold_to_netherite_tier_upgrade",
+    "sophisticatedstorage:basic_to_gold_tier_upgrade",
+    "sophisticatedstorage:copper_to_diamond_tier_upgrade",
+    "sophisticatedstorage:copper_to_netherite_tier_upgrade",
+    "sophisticatedstorage:iron_to_diamond_tier_upgrade",
+    "sophisticatedstorage:iron_to_netherite_tier_upgrade",
+    "sophisticatedstorage:basic_to_netherite_tier_upgrade",
+    "sophisticatedstorage:copper_to_gold_tier_upgrade",
     "vintagedelight:mason_jar",
     "rehooked:wood_chain",
     "rehooked:blaze_chain",
@@ -158,6 +170,7 @@ JEIEvents.hideItems((e) => {
     "nethervinery:warped_apple_press",
     "nethervinery:crimson_apple_press",
     // Furniture Dupes
+    "refurbished_furniture:knife",
     "refurbished_furniture:sea_salt",
     "refurbished_furniture:dough",
     "refurbished_furniture:wheat_flour",

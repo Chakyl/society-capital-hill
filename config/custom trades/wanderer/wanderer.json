@@ -395,7 +395,7 @@
         "amount": 1
       },
       "tradeExp": 4,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0
     },

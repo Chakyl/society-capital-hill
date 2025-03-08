@@ -114,7 +114,7 @@
 				""
 				"This also comes in variants that don't normally exist in Minecraft, such as slopes."
 			]
-			icon: "create_connected:copycat_stairs"
+			icon: "copycats:copycat_stairs"
 			id: "23EFDF37F9BCD63B"
 			rewards: [{
 				id: "2A8ECF9567036899"
@@ -496,7 +496,7 @@
 			description: [
 				"The &6Workbench&r is used for crafting advanced furniture, and blocks from furniture catalogs!"
 				""
-				"It can be purchased from the &6Mechanic&r but requires power to operate. "
+				"It can be purchased from the &6Blacksmith&r but requires power to operate. "
 				""
 				"You can burn solid fuel in a generator and connect it to the &6Workbench&r using the &6Electric Wrench&r."
 			]

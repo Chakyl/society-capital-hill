@@ -41,6 +41,7 @@ BlockEvents.rightClicked((e) => {
         "farmersdelight:rice_panicles",
         "herbalbrews:lavender",
         "herbalbrews:hibiscus",
+        "minecraft:torchflower"
       ].includes(e.block.id)
     ) {
       e.player.tell("Bone Meal is too weak to grow this crop...");
