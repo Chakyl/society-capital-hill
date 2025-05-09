@@ -1,5 +1,6 @@
 console.info("[SOCIETY] goldenClock.js loaded");
 
+// TODO: Add more machines
 global.handleProgress = (level, block) => {
   const eventObj = { level: level, block: block };
   let id = block.id;
@@ -76,7 +77,7 @@ StartupEvents.registry("block", (event) => {
       const { x, y, z } = block;
       const radius = 2;
       let scanBlock;
-      if (rnd25()) {
+      if (rnd5()) {
         for (let pos of BlockPos.betweenClosed(
           new BlockPos(x - radius, y - radius, z - radius),
           [x + radius, y + radius, z + radius]

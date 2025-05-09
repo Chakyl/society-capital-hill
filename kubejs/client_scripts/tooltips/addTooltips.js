@@ -524,6 +524,7 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Crops underneath grow in any season")
   );
   tooltip.add("society:furniture_box", Text.gray("Right click to open"));
+  tooltip.add("society:bouquet_bag", Text.gray("Right click to open"));
   tooltip.add(
     "gag:time_sand_pouch",
     Text.red("REMOVED!! CORRUPTS WORLD WHEN USED ON ARTISAN MACHINES")
@@ -543,10 +544,6 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     "vintagedelight:evaporator",
     Text.gray("Place next to water to make salt")
-  );
-  tooltip.add(
-    "treetap:tap",
-    Text.gray("Place on logs then click with a bucket")
   );
   tooltip.add(
     "farmersdelight:rich_soil",
@@ -931,4 +928,10 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.red("Not placeable in Wine Racks")
   );
+  global.removedItems.forEach((item) => {
+    tooltip.add(
+      item,
+      Text.red("REMOVED! You shouldn't have this...")
+    );
+  });
 });

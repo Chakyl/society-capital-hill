@@ -119,42 +119,6 @@
             ]
         },
         {
-            "pakku_id": "MEXiYhnpza4oPBl1",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "alltheleaks"
-            },
-            "name": {
-                "curseforge": "AllTheLeaks (Memory Leak Fix)"
-            },
-            "id": {
-                "curseforge": "1091339"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "alltheleaks-0.1.0-beta+1.20.1-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5936/734/alltheleaks-0.1.0-beta+1.20.1-forge.jar",
-                    "id": "5936734",
-                    "parent_id": "1091339",
-                    "hashes": {
-                        "sha1": "cdffeccce5b083242eb735a7e338aa30a665a429",
-                        "md5": "69c19688f60e4ce65f2ae485803e5a4c"
-                    },
-                    "required_dependencies": [],
-                    "size": 489143,
-                    "date_published": "2024-11-25T17:27:27.650Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "6RYbKC5i40W0HEPq",
             "type": "MOD",
             "slug": {
@@ -1099,7 +1063,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Botania-1.20.1-447-FORGE.jar",
+                    "file_name": "Botania-1.20.1-448-FORGE.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1107,19 +1071,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6172/172/Botania-1.20.1-447-FORGE.jar",
-                    "id": "6172172",
+                    "url": "https://edge.forgecdn.net/files/6366/547/Botania-1.20.1-448-FORGE.jar",
+                    "id": "6366547",
                     "parent_id": "225643",
                     "hashes": {
-                        "sha1": "07afee866afb1ece0bebf2b5651e9e2309e3061b",
-                        "md5": "ef100ba99918d7a99c30792344d428f9"
+                        "sha1": "57f76fd701cfcc6da5e281dd0c221b06ab42e316",
+                        "md5": "993f29f2034c122d78a4a97c654364e2"
                     },
                     "required_dependencies": [
                         "309927",
                         "306770"
                     ],
-                    "size": 12437003,
-                    "date_published": "2025-02-08T19:06:25.673Z"
+                    "size": 12471821,
+                    "date_published": "2025-03-30T11:52:36.217Z"
                 }
             ]
         },
@@ -4282,7 +4246,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FastSuite-1.20.1-5.0.1.jar",
+                    "file_name": "FastSuite-1.20.1-5.1.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4291,18 +4255,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4711/435/FastSuite-1.20.1-5.0.1.jar",
-                    "id": "4711435",
+                    "url": "https://edge.forgecdn.net/files/6318/54/FastSuite-1.20.1-5.1.0.jar",
+                    "id": "6318054",
                     "parent_id": "475117",
                     "hashes": {
-                        "sha1": "c418caa1eea74e9f05b4a20862ebc665019250c8",
-                        "md5": "a355432ffcf3e2f60fa9a19268468be5"
+                        "sha1": "3a759dce0ddc91e299027faa800c0ee40ab90de8",
+                        "md5": "5308931eb0df44e4f39c06a7696f42ce"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 20315,
-                    "date_published": "2023-08-18T23:10:37.720Z"
+                    "size": 25305,
+                    "date_published": "2025-03-18T05:27:07.867Z"
                 }
             ]
         },
@@ -4670,7 +4634,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "gamediscs-0.3.1.jar",
+                    "file_name": "gamediscs-0.3.2-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4678,16 +4642,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5762/434/gamediscs-0.3.1.jar",
-                    "id": "5762434",
+                    "url": "https://edge.forgecdn.net/files/6469/886/gamediscs-0.3.2-forge.jar",
+                    "id": "6469886",
                     "parent_id": "1099059",
                     "hashes": {
-                        "sha1": "b4bcb7220f818ec8718108336ed8cbefcacb948b",
-                        "md5": "9a7db3e995bd5b47848e244270bd191a"
+                        "sha1": "1403f1b7c70ed6cf4d95cbb8580fcc8f5432535a",
+                        "md5": "1b5214a4f1504e701ec2bc03aed66a32"
                     },
                     "required_dependencies": [],
-                    "size": 259432,
-                    "date_published": "2024-09-27T19:10:23.610Z"
+                    "size": 241786,
+                    "date_published": "2025-04-27T10:13:28.577Z"
                 }
             ]
         },
@@ -4779,27 +4743,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "glow_up-1.1-1.20.zip",
+                    "file_name": "glow_up-1.2-1.20.1.zip",
                     "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4"
+                        "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6194/444/glow_up-1.1-1.20.zip",
-                    "id": "6194444",
+                    "url": "https://edge.forgecdn.net/files/6503/839/glow_up-1.2-1.20.1.zip",
+                    "id": "6503839",
                     "parent_id": "1162010",
                     "hashes": {
-                        "sha1": "456943ede155af5e48930269d348b47f77d97c96",
-                        "md5": "dd2d7bf17be06a16b7d682ae927c91f8"
+                        "sha1": "d0f58464753976d5f9c7022485272b5be5e72718",
+                        "md5": "23acc07641c3acea63bfb841eaf2b7d9"
                     },
                     "required_dependencies": [],
-                    "size": 259956,
-                    "date_published": "2025-02-15T00:43:15.363Z"
+                    "size": 291132,
+                    "date_published": "2025-05-07T00:25:48.870Z"
                 }
             ]
         },
@@ -7124,6 +7082,47 @@
             ]
         },
         {
+            "pakku_id": "3pHMTrCd5bC1LSjx",
+            "pakku_links": [
+                "UgI7EbeCzWodOBqx"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "oreganized"
+            },
+            "name": {
+                "curseforge": "Oreganized"
+            },
+            "id": {
+                "curseforge": "769203"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Oreganized 1.20.1-3.1.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5890/510/Oreganized 1.20.1-3.1.2.jar",
+                    "id": "5890510",
+                    "parent_id": "769203",
+                    "hashes": {
+                        "sha1": "6b328b92bd44e00c9950fa105ccd719f3664661d",
+                        "md5": "0a9b20185f0356010308250c5880e0cd"
+                    },
+                    "required_dependencies": [
+                        "382216"
+                    ],
+                    "size": 6674089,
+                    "date_published": "2024-11-10T10:19:35.293Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "tJ8QX2V4rACVXhm2",
             "type": "MOD",
             "slug": {
@@ -7379,7 +7378,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Patchouli-1.20.1-84-FORGE.jar",
+                    "file_name": "Patchouli-1.20.1-84.1-FORGE.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7387,16 +7386,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4966/125/Patchouli-1.20.1-84-FORGE.jar",
-                    "id": "4966125",
+                    "url": "https://edge.forgecdn.net/files/6164/575/Patchouli-1.20.1-84.1-FORGE.jar",
+                    "id": "6164575",
                     "parent_id": "306770",
                     "hashes": {
-                        "sha1": "b6b7267f3669c10c167d5d375d0274d40e3eb756",
-                        "md5": "64452a4404a2c47a782ba99cb90c3ca0"
+                        "sha1": "e91d2e2f251375d647d592b670ea6f310c2554eb",
+                        "md5": "d5154cacf6859582eebd853bd59f5537"
                     },
                     "required_dependencies": [],
-                    "size": 642506,
-                    "date_published": "2023-12-18T11:28:42.253Z"
+                    "size": 642711,
+                    "date_published": "2025-02-06T16:09:52.160Z"
                 }
             ]
         },
@@ -7908,7 +7907,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Quark-4.0-461.jar",
+                    "file_name": "Quark-4.0-462.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7916,18 +7915,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6312/787/Quark-4.0-461.jar",
-                    "id": "6312787",
+                    "url": "https://edge.forgecdn.net/files/6427/817/Quark-4.0-462.jar",
+                    "id": "6427817",
                     "parent_id": "243121",
                     "hashes": {
-                        "sha1": "af3f31edacee8e5d7cea6e429db8a77707013db3",
-                        "md5": "c1fa0690e1dce6ec22f7e3019c287d2d"
+                        "sha1": "9b0fb82995622a0070c00827c698c43b49d9d14b",
+                        "md5": "6eef0d0ac52df0c239cb443abc137f3d"
                     },
                     "required_dependencies": [
                         "968868"
                     ],
-                    "size": 14892320,
-                    "date_published": "2025-03-16T19:03:11.373Z"
+                    "size": 14935230,
+                    "date_published": "2025-04-16T02:35:10.557Z"
                 }
             ]
         },
@@ -8306,6 +8305,43 @@
                     ],
                     "size": 2158381,
                     "date_published": "2024-12-20T01:23:22.703Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "RmYbwleoqp74F1bQ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "rotten-creatures"
+            },
+            "name": {
+                "curseforge": "Rotten Creatures"
+            },
+            "id": {
+                "curseforge": "371033"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "rottencreatures-forge-1.20.1-1.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6336/745/rottencreatures-forge-1.20.1-1.1.0.jar",
+                    "id": "6336745",
+                    "parent_id": "371033",
+                    "hashes": {
+                        "sha1": "def7db68bb8a89bdbbda7d9eee85778f93b5884c",
+                        "md5": "b93a055c1819d1c24cf3bf4d4ca490e3"
+                    },
+                    "required_dependencies": [],
+                    "size": 2595007,
+                    "date_published": "2025-03-23T19:38:15.693Z"
                 }
             ]
         },
@@ -9776,42 +9812,6 @@
             ]
         },
         {
-            "pakku_id": "sT2XuJvcyq3sUz4J",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "terrablender"
-            },
-            "name": {
-                "curseforge": "TerraBlender (Forge)"
-            },
-            "id": {
-                "curseforge": "563928"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "TerraBlender-forge-1.20.1-3.0.1.7.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5378/180/TerraBlender-forge-1.20.1-3.0.1.7.jar",
-                    "id": "5378180",
-                    "parent_id": "563928",
-                    "hashes": {
-                        "sha1": "afbb7536bdd5e723688c1eaa38df398fe15d0b18",
-                        "md5": "78abbc04e408fb61de6df9c968008c4b"
-                    },
-                    "required_dependencies": [],
-                    "size": 107534,
-                    "date_published": "2024-05-28T09:38:10.920Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "M7n6B3q9nnmFawiF",
             "pakku_links": [
                 "847NCyjjQ31hGN4d"
@@ -10948,7 +10948,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Zeta-1.0-29.jar",
+                    "file_name": "Zeta-1.0-30.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10956,16 +10956,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6363/524/Zeta-1.0-29.jar",
-                    "id": "6363524",
+                    "url": "https://edge.forgecdn.net/files/6432/578/Zeta-1.0-30.jar",
+                    "id": "6432578",
                     "parent_id": "968868",
                     "hashes": {
-                        "sha1": "e27a2cdd8f3938228140d082d97def5dd3147dd2",
-                        "md5": "78918c8adf342def98a0d95968ec57cf"
+                        "sha1": "1e87aae038570b8f5864bcdd6ae6dabb30162f2d",
+                        "md5": "9fa915bd7e2c64217223b6a98ab5dc47"
                     },
                     "required_dependencies": [],
-                    "size": 1006433,
-                    "date_published": "2025-03-29T15:35:29.610Z"
+                    "size": 1006574,
+                    "date_published": "2025-04-17T13:20:48.953Z"
                 }
             ]
         },

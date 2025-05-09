@@ -64,16 +64,6 @@ StartupEvents.registry("block", (e) => {
       });
     });
 
-  // e.create("society:boulder")
-  //   .defaultCutout()
-  //   .soundType("stone")
-  //   .hardness(4.5)
-  //   .resistance(9.0)
-  //   .requiresTool(true)
-  //   .tagBlock("minecraft:mineable/pickaxe")
-  //   .tagBlock("minecraft:needs_stone_tool")
-  //   .model("society:block/boulder");
-
   e.create("society:geode_node")
     .box(4, 0, 4, 12, 9, 12)
     .defaultCutout()
@@ -107,6 +97,36 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_diamond_tool")
     .model("society:block/omni_geode_node");
 
+  e.create("society:sparkstone_ore")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/sparkstone_ore")
+
+  e.create("society:deepslate_sparkstone_ore")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/deepslate_sparkstone_ore")
+  // Skull Cavern
+
+  
+
+  e.create("society:skull_stone")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(-1)
+    .resistance(3600000)
+    .requiresTool(true)
+    .textureAll("minecraft:block/stone")
   // Drinks
   e.create("society:espresso")
     .box(6, 0, 6, 10, 4, 10)
@@ -284,7 +304,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .model("society:block/drinks/beer_attunecore")
     .item((item) => {
-    item.modelJson({
+      item.modelJson({
         parent: "minecraft:item/generated",
         textures: {
           layer0: "society:item/drinks/beer_attunecore",

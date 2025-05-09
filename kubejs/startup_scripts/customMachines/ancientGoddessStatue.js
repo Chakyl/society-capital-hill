@@ -12,7 +12,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Offer crates of crops to recieve the goddess' blessing"));
+      item.tooltip(Text.gray("Offer crops to recieve the goddess' blessing"));
       item.tooltip(Text.red("Only usable if Farmer's Blessing skill unlocked"));
       item.modelJson({
         parent: "society:block/ancient_goddess_statue",

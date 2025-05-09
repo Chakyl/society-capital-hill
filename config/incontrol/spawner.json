@@ -39,7 +39,7 @@
       "maximum": 1
     },
     "conditions": {
-      "dimension": "mining_dimension:mining",
+      "dimension": "society:skull_cavern",
       "mindist": 45,
       "minheight": 100,
       "maxheight": 256,
@@ -55,7 +55,7 @@
       "maximum": 2
     },
     "conditions": {
-      "dimension": "mining_dimension:mining",
+      "dimension": "society:skull_cavern",
       "maxhostile": 200
     }
   },
@@ -69,7 +69,7 @@
     },
     "conditions": {
       "norestrictions": true,
-      "dimension": "mining_dimension:mining",
+      "dimension": "society:skull_cavern",
       "maxthis": 10
     }
   },
@@ -129,7 +129,7 @@
       "groupdistance": 3
     },
     "conditions": {
-      "dimension": "mining_dimension:mining",
+      "dimension": "society:skull_cavern",
       "maxthis": 50
     }
   }

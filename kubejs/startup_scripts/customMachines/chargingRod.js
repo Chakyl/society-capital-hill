@@ -126,7 +126,7 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        global.handleBETick(entity, null, 1);
+        global.handleBETick(entity, null, 5);
       });
     }).blockstateJson = {
     multipart: [

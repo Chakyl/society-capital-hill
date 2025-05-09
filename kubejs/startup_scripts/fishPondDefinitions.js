@@ -3029,7 +3029,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "minecraft:oak_log", count: 64 },
-          { item: "treetap:tap", count: 8 },
+          { item: "society:tapper", count: 8 },
           { item: "minecraft:dark_oak_log", count: 64 },
         ],
       },

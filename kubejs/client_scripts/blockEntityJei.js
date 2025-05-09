@@ -197,6 +197,23 @@ JEIAddedEvents.registerCategories((e) => {
     64,
     0
   );
+  registerBECategory(
+    e,
+    "recycling",
+    "recycling_machine",
+    "Recycling",
+    1,
+    1
+  );
+  
+  registerBECategory(
+    e,
+    "tapping",
+    "tapper",
+    "Tapping",
+    1,
+    7
+  );
 });
 
 // JEI Catalysts broken on JEI version
@@ -295,5 +312,11 @@ JEIAddedEvents.registerRecipes((e) => {
     { input: "snowyspirit:ginger", output: ["4x minecraft:ancient_debris"] },
   ].forEach((element) => {
     e.custom("society:goddess_offering").add(element);
+  });
+  global.recyclingMachineRecipes.forEach((element) => {
+    e.custom("society:recycling").add(element);
+  });
+  global.tapperRecipes.forEach((element) => {
+    e.custom("society:tapping").add(element);
   });
 });

@@ -298,6 +298,18 @@ const artisanMachines = [
     stageCount: 1,
     maxInput: 4,
   },
+  {
+    id: "society:tapper",
+    recipes: global.tapperRecipes,
+    stageCount: 7,
+    maxInput: 1,
+  },
+  {
+    id: "society:recycling_machine",
+    recipes: global.recyclingMachineRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
 ];
 const artisanMachineIds = artisanMachines.map((x) => x.id);
 

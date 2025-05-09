@@ -47,6 +47,13 @@ ServerEvents.recipes((e) => {
     g: "moreminecarts:organic_glass",
   });
   // Earth Crystal
+  e.shapeless("society:tapper", ["treetap:tap"]);
+  e.shaped("society:tapper", [" C ", "lwl", " e "], {
+    w: "meadow:wooden_bucket",
+    l: "meadow:fire_log",
+    e: "society:earth_crystal",
+    C: "minecraft:copper_block",
+  });
   e.shaped("society:mayonnaise_machine", [" C ", "pcp", " e "], {
     c: "minecraft:composter",
     C: "numismatics:crown",
@@ -611,7 +618,7 @@ ServerEvents.recipes((e) => {
     h: "unusualfishmod:fluvial_shell",
     c: "society:charging_rod",
   });
-  
+
   e.shaped("society:gnome", [" h ", "iti", " s "], {
     t: "society:tiny_gnome",
     i: "species:ichor_bottle",

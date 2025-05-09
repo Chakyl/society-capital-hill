@@ -1,6 +1,8 @@
 console.info("[SOCIETY] registerItems.js loaded");
 
 StartupEvents.registry("item", (e) => {
+  e.create("oreganized:lead_sheet").texture("society:item/lead_sheet");
+  e.create("oreganized:silver_sheet").texture("society:item/silver_sheet");
   e.create("herbalbrews:water_cup")
     .texture("society:item/water_cup")
     .maxStackSize(16);
@@ -37,7 +39,6 @@ StartupEvents.registry("item", (e) => {
   e.create("society:fantasy_dust")
     .texture("society:item/fantasy_dust")
     .displayName(Text.yellow(":crystal_ball: Fantasy Dust"));
-
   e.create("society:stone_hand").texture("society:item/stone_hand");
   e.create("society:broken_clock").texture("society:item/broken_clock");
   e.create("society:sea_biscut")
@@ -112,6 +113,7 @@ StartupEvents.registry("item", (e) => {
         `Fantasy Box: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Set`
       );
   });
+  e.create("society:bouquet_bag").texture("society:item/bouquet_bag");
   e.create("society:pine_tar").texture("society:item/pine_tar");
   e.create("society:oak_resin").texture("society:item/oak_resin");
   e.create("society:maple_syrup").texture("society:item/maple_syrup");
@@ -314,7 +316,7 @@ StartupEvents.registry("item", (e) => {
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/husbandry/${item}`);
   });
-  e.create("society:cracked_egg").texture("society:item/cracked_egg")
+  e.create("society:cracked_egg").texture("society:item/cracked_egg");
   e.create("society:mayonnaise")
     .texture("society:item/mayo/mayonnaise")
     .food((food) => {
@@ -390,6 +392,9 @@ StartupEvents.registry("item", (e) => {
       })
       .useAnimation("drink");
   });
+  e.create(`society:magnifying_glass`)
+    .texture(`society:item/magnifying_glass`)
+    .maxStackSize(1);
   e.create(`society:cornucopia`)
     .texture(`society:item/cornucopia`)
     .maxStackSize(1);
@@ -432,6 +437,8 @@ StartupEvents.registry("item", (e) => {
       `society:item/gems/${gem.item.split(":")[1]}`
     );
   });
+
+  e.create("society:sparkstone").texture("society:item/sparkstone");
 
   global.preserves.forEach((jar) => {
     if (jar.item.includes("society"))

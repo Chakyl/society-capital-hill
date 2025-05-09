@@ -1104,18 +1104,18 @@
 
 			[world.corundum.generation_settings.dimensions]
 				"Is Blacklist" = false
-				Dimensions = ["mining_dimension:mining"]
+				Dimensions = ["society:skull_cavern"]
 
 			[world.corundum.generation_settings.biomes]
 
 				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
 				[world.corundum.generation_settings.biomes.tags]
-					"Biome Tags" = []
-					"Is Blacklist" = true
+					"Biome Tags" = ["society:is_skull_cavern"]
+					"Is Blacklist" = false
 
 				#Biome names this should spawn in. Must match both this and 'types' to spawn.
 				[world.corundum.generation_settings.biomes.biomes]
-					Biomes = ["mining_dimension:mining"]
+					Biomes = []
 					"Is Blacklist" = false
 
 	[world.fairy_rings]

@@ -64,7 +64,6 @@ ServerEvents.tags("item", (e) => {
     "pamhc2trees:walnut_sapling",
     "pamhc2trees:pear_sapling",
     "pamhc2trees:nutmeg_sapling",
-
     "pamhc2trees:grapefruit_sapling",
     "pamhc2trees:pomegranate_sapling",
     "pamhc2trees:guava_sapling",
@@ -173,6 +172,10 @@ ServerEvents.tags("item", (e) => {
   ];
   stripTags.forEach((item) => {
     e.removeAllTagsFrom(item);
+  });
+  global.removedItems.forEach((item) => {
+    e.removeAllTagsFrom(item);
+    e.add("furniture:trash_bag_blacklist", item);
   });
 });
 const rawLogs = [
@@ -331,7 +334,7 @@ ServerEvents.tags("item", (e) => {
   global.pristine.forEach((mineral) => {
     e.add("society:pristine_mineral", mineral.item);
   });
-e.add("forge:eggs", "society:cracked_egg");
+  e.add("forge:eggs", "society:cracked_egg");
   [
     "society:large_egg",
     "society:large_duck_egg",
@@ -347,7 +350,7 @@ e.add("forge:eggs", "society:cracked_egg");
   global.lootFurniture.forEach((furniture) => {
     e.add("society:loot_furniture", furniture);
   });
-  const mirrors = [
+  [
     "furniture:cherry_mirror",
     "furniture:mangrove_mirror",
     "furniture:dark_oak_mirror",
@@ -356,9 +359,11 @@ e.add("forge:eggs", "society:cracked_egg");
     "furniture:jungle_mirror",
     "furniture:oak_mirror",
     "furniture:birch_mirror",
-  ];
-  mirrors.forEach((mirror) => {
+  ].forEach((mirror) => {
     e.add("society:mirrors", mirror);
+  });
+  ['society:oak_resin', 'society:maple_syrup', 'society:pine_tar'].forEach((bottle) => {
+    e.add('create:upright_on_belt', bottle);
   });
   // Geodes
   const geodeJunk = [
@@ -383,7 +388,9 @@ e.add("forge:eggs", "society:cracked_egg");
     e.add("society:geode_treasure", geodeItem.item);
     e.add("society:omni_geode_treasure", geodeItem.item);
   });
-  e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure")
+  e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
+  e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
+  e.add("splendid_slimes:slime_vac_fireable",  "minecraft:bone");
   const geodeRelic = ["relics:horse_flute", "relics:hunter_belt"];
   geodeRelic.forEach((geodeItem) => {
     e.add("society:geode_relic", geodeItem);
@@ -605,6 +612,15 @@ ServerEvents.tags("block", (e) => {
   ].forEach((wool) => {
     e.add("minecraft:mineable/axe", wool);
   });
+  [
+    "minecraft:dark_oak_log",
+    "meadow:pine_log",
+    "minecraft:spruce_log",
+    "autumnity:maple_log",
+    "minecraft:oak_log",
+  ].forEach((block) => {
+    e.add("society:tappable_blocks", block);
+  });
   const flowersMissingBlockTags = [
     "meadow:eriophorum_tall",
     "meadow:alpine_poppy",
@@ -655,6 +671,7 @@ ServerEvents.tags("block", (e) => {
   });
   e.remove("minecraft:leaves", "beachparty:palm_leaves");
   e.add("society:palm_leaves", "beachparty:palm_leaves");
+  e.add("society:skull_block", "society:skull_stone");
 });
 
 ServerEvents.tags("fluid", (e) => {
