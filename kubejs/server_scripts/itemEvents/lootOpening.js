@@ -1,4 +1,4 @@
-console.info("[SOCIETY] furnitureOpening.js loaded");
+console.info("[SOCIETY] lootOpening.js loaded");
 
 ItemEvents.rightClicked("society:furniture_box", (e) => {
   const { server, player, item } = e;
@@ -55,4 +55,28 @@ fantasyBoxes.forEach((theme) => {
       );
       player.addItemCooldown(`society:fantasy_box_${theme}`, 2);
     });
+});
+
+
+ItemEvents.rightClicked("society:bouquet_bag", (e) => {
+  const { server, player, item } = e;
+  server.runCommandSilent(
+    `playsound minecraft:ui.stonecutter.take_result block @a ${player.x} ${player.y} ${player.z}`
+  );
+
+  const furniture = Ingredient.of("#society:bouquet_bag_flowers").itemIds;
+
+  if (!player.isCreative()) item.count--;
+  let reward = player.level.createEntity("minecraft:item");
+  reward.x = player.x;
+  reward.y = player.y;
+  reward.z = player.z;
+
+  reward.item = Item.of(`4x ${furniture[Math.floor(Math.random() * furniture.length)]}`);
+
+  reward.spawn();
+  server.runCommandSilent(
+    `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
+  );
+  player.addItemCooldown("society:bouquet_bag", 2);
 });

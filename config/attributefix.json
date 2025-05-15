@@ -22,6 +22,17 @@
         "value": 512
       }
     },
+    "runiclib:generic.retaliation_amount": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "confluence:crit_chance": {
       "enabled": false,
       "min": {
@@ -53,6 +64,17 @@
       "max": {
         "default": 64,
         "value": 64
+      }
+    },
+    "runiclib:generic.vulnerability_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "forge:entity_gravity": {
@@ -110,6 +132,17 @@
         "value": 1000
       }
     },
+    "runiclib:generic.lifesteal_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "stardew_fishing:exp_multiplier": {
       "enabled": false,
       "min": {
@@ -130,6 +163,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "runiclib:generic.burning_retaliation_length": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "forge:entity_reach": {
@@ -174,6 +218,17 @@
       "max": {
         "default": 64,
         "value": 64
+      }
+    },
+    "runiclib:generic.lifesteal_heal_amount": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "reforgingstation:entity_reach": {
@@ -330,6 +385,17 @@
         "value": 64
       }
     },
+    "runiclib:generic.burning_retaliation_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "reforgingstation:dig_speed": {
       "enabled": false,
       "min": {
@@ -429,6 +495,17 @@
         "value": 10000
       }
     },
+    "runiclib:generic.dodge_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "l2damagetracker:explosion_damage": {
       "enabled": false,
       "min": {
@@ -438,6 +515,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "runiclib:generic.retaliation_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "puffish_attributes:stamina": {
@@ -572,6 +660,17 @@
         "value": 1000000
       }
     },
+    "runiclib:generic.critical_strike_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "reforgingstation:block_reach": {
       "enabled": false,
       "min": {
@@ -603,6 +702,28 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "runiclib:generic.critical_strike_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "oreganized:kinetic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
       }
     },
     "additional_attributes:looting": {
@@ -647,6 +768,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "runiclib:generic.vulnerability_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "l2damagetracker:magic_damage": {

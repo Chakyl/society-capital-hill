@@ -5,6 +5,7 @@ ServerEvents.recipes((e) => {
     o: "atmospheric:orange",
     m: "farm_and_charm:minced_beef",
   });
+  e.smelting("society:rubber", "society:sap");
   e.custom({
     type: "farmersdelight:cutting",
     ingredients: [{ item: "herbalbrews:lavender" }],
@@ -47,6 +48,13 @@ ServerEvents.recipes((e) => {
     g: "moreminecarts:organic_glass",
   });
   // Earth Crystal
+  e.shapeless("society:tapper", ["treetap:tap"]);
+  e.shaped("society:tapper", [" C ", "lwl", " e "], {
+    w: "meadow:wooden_bucket",
+    l: "meadow:fire_log",
+    e: "society:earth_crystal",
+    C: "minecraft:copper_block",
+  });
   e.shaped("society:mayonnaise_machine", [" C ", "pcp", " e "], {
     c: "minecraft:composter",
     C: "numismatics:crown",
@@ -71,7 +79,8 @@ ServerEvents.recipes((e) => {
     e: "society:earth_crystal",
     s: "meadow:alpine_salt",
   });
-  e.shaped("society:loom", ["t  ", "t  ", "ttt"], {
+  e.shaped("society:loom", ["l  ", "l  ", "ltl"], {
+    l: "meadow:fire_log",
     t: "society:treated_log",
   });
   e.shaped("minecraft:beehive", ["ppp", "hhh", "pop"], {
@@ -284,8 +293,9 @@ ServerEvents.recipes((e) => {
     P: "society:prismatic_shard",
     a: "numismatics:ancient_coin",
   });
-  e.shaped("create:mechanical_saw", [" c ", "nnn", "AaA"], {
+  e.shaped("create:mechanical_saw", ["oco", "nnn", "AaA"], {
     a: "create:andesite_casing",
+    o: "create:powdered_obsidian",
     A: "minecraft:netherite_upgrade_smithing_template",
     c: "numismatics:ancient_coin",
     n: "minecraft:netherite_ingot",
@@ -294,7 +304,8 @@ ServerEvents.recipes((e) => {
     h: "create:mechanical_saw",
     c: "minecraft:netherite_upgrade_smithing_template",
   });
-  e.shaped("create:mechanical_harvester", ["pcp", "hhh", "cac"], {
+  e.shaped("create:mechanical_harvester", ["pcp", "hhh", "oao"], {
+    o: "create:powdered_obsidian",
     a: "create:andesite_casing",
     h: "minecraft:netherite_ingot",
     c: "numismatics:ancient_coin",
@@ -304,7 +315,8 @@ ServerEvents.recipes((e) => {
     h: "create:mechanical_harvester",
     s: "minecraft:netherite_upgrade_smithing_template",
   });
-  e.shaped("create:mechanical_drill", ["cPc", "PpP", "cPa"], {
+  e.shaped("create:mechanical_drill", ["cPo", "PpP", "oPa"], {
+    o: "create:powdered_obsidian",
     a: "create:andesite_casing",
     P: "minecraft:netherite_ingot",
     c: "numismatics:ancient_coin",
@@ -314,11 +326,27 @@ ServerEvents.recipes((e) => {
     h: "create:mechanical_drill",
     c: "minecraft:netherite_upgrade_smithing_template",
   });
+  // Sparkstone
+  e.shaped("society:auto_grabber", ["lal", "bfb", "nsn"], {
+    f: "society:animal_feed",
+    a: "numismatics:ancient_coin",
+    n: "minecraft:netherite_ingot",
+    b: "society:battery",
+    s: "society:sparkstone",
+    l: "meadow:fire_log",
+  });
+  e.shaped("society:artisan_hopper", ["zaz", "bhb", "nsn"], {
+    a: "numismatics:ancient_coin",
+    n: "minecraft:netherite_ingot",
+    h: "minecraft:hopper",
+    b: "society:battery",
+    s: "society:sparkstone",
+    z: "create:zinc_ingot",
+  });
   // Fish
-  e.shaped("society:fish_pond", ["rNr", "PwP", "rCr"], {
+  e.shaped("society:fish_pond", ["PwP", "rNr"], {
     N: "aquaculture:neptunium_ingot",
     P: "crabbersdelight:pearl",
-    C: "numismatics:sun",
     r: "society:oak_resin",
     w: "meadow:wooden_water_bucket",
   });
@@ -358,7 +386,7 @@ ServerEvents.recipes((e) => {
   });
 
   // Jade
-  e.shaped("society:aging_cask", ["SjS", "pbp", "SpS"], {
+  e.shaped("society:aging_cask", ["SjS", "pbp", "SSS"], {
     b: "vinery:fermentation_barrel",
     S: "numismatics:sun",
     j: "society:jade",
@@ -373,7 +401,13 @@ ServerEvents.recipes((e) => {
     l: "minecraft:lightning_rod",
     b: "quark:blaze_lantern",
   });
-  // Other
+  e.shaped("society:auto_tapper", ["fFf", "bTb", "fPf"], {
+    f: "meadow:fire_log",
+    F: "create:fluid_tank",
+    T: "society:tapper",
+    b: "society:battery",
+    P: "create:precision_mechanism",
+  });
   e.shapeless("society:furniture_box", ["4x #society:loot_furniture"]);
   e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(
     0.35
@@ -385,11 +419,11 @@ ServerEvents.recipes((e) => {
   // Dramatic Doors
   e.shapeless("dramaticdoors:short_silver_door", [
     "dramaticdoors:short_iron_door",
-    "minecraft:light_blue_dye",
+    "oreganized:silver_ingot",
   ]);
   e.shapeless("dramaticdoors:tall_silver_door", [
     "dramaticdoors:tall_iron_door",
-    "minecraft:light_blue_dye",
+    "oreganized:silver_ingot",
   ]);
   // Neptuna
   e.custom({
@@ -611,7 +645,7 @@ ServerEvents.recipes((e) => {
     h: "unusualfishmod:fluvial_shell",
     c: "society:charging_rod",
   });
-  
+
   e.shaped("society:gnome", [" h ", "iti", " s "], {
     t: "society:tiny_gnome",
     i: "species:ichor_bottle",

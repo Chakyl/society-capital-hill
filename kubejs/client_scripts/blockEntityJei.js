@@ -1,32 +1,14 @@
-const registerBECategory = (
-  event,
-  categoryID,
-  block,
-  title,
-  inputCount,
-  days
-) => {
+const registerBECategory = (event, categoryID, block, title, inputCount, days) => {
   event.custom(`society:${categoryID}`, (category) => {
     const {
       jeiHelpers: { guiHelper },
     } = category;
     category
       .title(title)
-      .background(
-        guiHelper.createDrawable(
-          "society:textures/gui/block_entity.png",
-          1,
-          1,
-          142,
-          42
-        )
-      )
+      .background(guiHelper.createDrawable("society:textures/gui/block_entity.png", 1, 1, 142, 42))
       .icon(guiHelper.createDrawableItemStack(Item.of(`society:${block}`)))
       .isRecipeHandled((recipe) => {
-        return !!(
-          recipe?.data?.input !== undefined &&
-          recipe?.data?.output !== undefined
-        );
+        return !!(recipe?.data?.input !== undefined && recipe?.data?.output !== undefined);
       })
       .setDrawHandler((recipe, recipeSlotsView, guiGraphics) => {
         guiGraphics.drawWordWrap(
@@ -34,9 +16,7 @@ const registerBECategory = (
           Text.of(
             days < 1
               ? "< than a day"
-              : `${recipe.getRecipeData().time || days} day${
-                  days > 1 ? "s" : ""
-                }`
+              : `${recipe.getRecipeData().time || days} day${days > 1 ? "s" : ""}`
           ),
           72,
           29,
@@ -49,9 +29,7 @@ const registerBECategory = (
         const slotSize = 21;
         builder
           .addSlot("INPUT", 2, 2)
-          .addItemStack(
-            `${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`
-          )
+          .addItemStack(`${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`)
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         builder.addSlot("CATALYST", 52, 2).addItemStack(`society:${block}`);
         output.forEach((item, index) => {
@@ -76,18 +54,16 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
       .isRecipeHandled((recipe) => {
         return !!(recipe?.data?.item !== undefined);
       })
-      .setDrawHandler(
-        (recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
-          global["textDrawHandler"](
-            category.jeiHelpers,
-            recipe,
-            recipeSlotsView,
-            guiGraphics,
-            mouseX,
-            mouseY
-          );
-        }
-      )
+      .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+        global["textDrawHandler"](
+          category.jeiHelpers,
+          recipe,
+          recipeSlotsView,
+          guiGraphics,
+          mouseX,
+          mouseY
+        );
+      })
       .handleLookup((builder, recipe) => {
         const { item, additionalRewards } = recipe.data;
         let fishId = item.split(":")[1];
@@ -110,15 +86,10 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
           .addSlot("INPUT", 2, 2)
           .addItemStack(`${item}`)
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
-        global["textDrawHandler"] = (
-          jeiHelpers,
-          recipe,
-          recipeSlotsView,
-          guiGraphics
-        ) => {
+        global["textDrawHandler"] = (jeiHelpers, recipe, recipeSlotsView, guiGraphics) => {
           guiGraphics.drawWordWrap(
             Client.font,
-            Text.of("Non-Roe drops need higher max 🐟"),
+            Text.of("Hover over items for more info."),
             2,
             49,
             177,
@@ -128,12 +99,16 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
         outputs.forEach((reward, index) => {
           const line = index > 6 ? 28 : 2;
           builder
-            .addSlot(
-              "OUTPUT",
-              26 + (index > 6 ? index - 7 : index) * slotSize,
-              line
-            )
+            .addSlot("OUTPUT", 26 + (index > 6 ? index - 7 : index) * slotSize, line)
             .addItemStack(Item.of(`${reward.count}x ${reward.item}`))
+            .addTooltipCallback((slotView, tooltip) => {
+              if (reward.minPopulation) {
+                tooltip.add(1, Text.aqua(`${reward.minPopulation}+ 🐟 population required`));
+              }
+              if (reward.chance) {
+                tooltip.add(2, Text.gold(`${Math.round(reward.chance * 100)}% chance`));
+              }
+            })
             .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         });
       });
@@ -141,62 +116,23 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
 };
 JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "seed_making", "seed_maker", "Seed Making", 3, 1);
-  registerBECategory(e, "preserving", "preserves_jar", "Preserving", 5, 2);
-  registerBECategory(
-    e,
-    "bait_upgrading",
-    "deluxe_worm_farm",
-    "Bait Upgrading",
-    4,
-    0.5
-  );
+  registerBECategory(e, "preserving", "preserves_jar", "Preserving", 5, 3);
+  registerBECategory(e, "bait_upgrading", "deluxe_worm_farm", "Bait Upgrading", 4, 0.5);
   registerBECategory(e, "cask_aging", "aging_cask", "Cask Aging", 1, 10);
-  registerBECategory(
-    e,
-    "ancient_aging",
-    "ancient_cask",
-    "Ancient Aging",
-    1,
-    20
-  );
+  registerBECategory(e, "ancient_aging", "ancient_cask", "Ancient Aging", 1, 20);
   registerBECategory(e, "dehydrating", "dehydrator", "Dehydrating", 8, 1);
   registerBECategory(e, "fish_smoking", "fish_smoker", "Fish Smoking", 1, 2);
   registerBECategory(e, "bait_making", "bait_maker", "Bait Making", 1, 1);
-  registerBECategory(
-    e,
-    "mayonnaise_making",
-    "mayonnaise_machine",
-    "Mayonnaise Making",
-    1,
-    1
-  );
+  registerBECategory(e, "mayonnaise_making", "mayonnaise_machine", "Mayonnaise Making", 1, 1);
   registerBECategory(e, "loom_weaving", "loom", "Loom Weaving", 5, 1);
-  registerBECategory(
-    e,
-    "crystal_growing",
-    "crystalarium",
-    "Crystal Growing",
-    1,
-    5
-  );
+  registerBECategory(e, "crystal_growing", "crystalarium", "Crystal Growing", 1, 5);
   registerFishPondCategory(e, "fish_farming", "fish_pond", "Fish Farming");
   registerBECategory(e, "charging", "charging_rod", "Battery Making", 1, 5);
-  registerBECategory(
-    e,
-    "espresso_brewing",
-    "espresso_machine",
-    "Espresso Brewing",
-    4,
-    0.5
-  );
-  registerBECategory(
-    e,
-    "goddess_offering",
-    "ancient_goddess_statue",
-    "Goddess Offering",
-    64,
-    0
-  );
+  registerBECategory(e, "espresso_brewing", "espresso_machine", "Espresso Brewing", 4, 0.5);
+  registerBECategory(e, "goddess_offering", "ancient_goddess_statue", "Goddess Offering", 64, 0);
+  registerBECategory(e, "recycling", "recycling_machine", "Recycling", 1, 1);
+
+  registerBECategory(e, "tapping", "tapper", "Tapping", 1, 7);
 });
 
 // JEI Catalysts broken on JEI version
@@ -286,7 +222,7 @@ JEIAddedEvents.registerRecipes((e) => {
     { input: "society:ancient_fruit", output: ["society:prismatic_shard"] },
     {
       input: "vintagedelight:ghost_pepper",
-      output: ["4x society:artifact_trove"],
+      output: ["16x society:sparkstone"],
     },
     {
       input: "farm_and_charm:corn",
@@ -295,5 +231,11 @@ JEIAddedEvents.registerRecipes((e) => {
     { input: "snowyspirit:ginger", output: ["4x minecraft:ancient_debris"] },
   ].forEach((element) => {
     e.custom("society:goddess_offering").add(element);
+  });
+  global.recyclingMachineRecipes.forEach((element) => {
+    e.custom("society:recycling").add(element);
+  });
+  global.tapperRecipes.forEach((element) => {
+    e.custom("society:tapping").add(element);
   });
 });

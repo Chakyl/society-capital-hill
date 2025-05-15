@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 60,
+          "data": {
+            "Name": "minecraft:cobblestone"
+          }
+        },
+        {
+          "weight": 25,
+          "data": {
+            "Name": "minecraft:coal_ore"
+          }
+        },
+        {
+          "weight": 20,
+          "data": {
+            "Name": "minecraft:copper_ore"
+          }
+        },
+        {
+          "weight": 15,
+          "data": {
+            "Name": "minecraft:iron_ore"
+          }
+        },
+        {
+          "weight": 13,
+          "data": {
+            "Name": "create:zinc_ore"
+          }
+        },
+        {
+          "weight": 10,
+          "data": {
+            "Name": "minecraft:redstone_ore"
+          }
+        },
+        {
+          "weight": 7,
+          "data": {
+            "Name": "minecraft:gold_ore"
+          }
+        },
+        {
+          "weight": 6,
+          "data": {
+            "Name": "oreganized:lead_ore"
+          }
+        },
+        {
+          "weight": 6,
+          "data": {
+            "Name": "minecraft:lapis_ore"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:diamond_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:sparkstone_ore"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "oreganized:silver_ore"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:emerald_ore"
+          }
+        }
+      ]
+    }
+  }
+}

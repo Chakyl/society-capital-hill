@@ -91,7 +91,7 @@ global.prizeMachineRewards = [
     hint: "capable of handling liquids",
     possibleOutputs: [
       "2x vintagedelight:fermenting_jar",
-      "2x treetap:tap",
+      "2x society:tapper",
       "2x vinery:fermentation_barrel",
     ],
   },
