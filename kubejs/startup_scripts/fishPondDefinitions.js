@@ -672,7 +672,7 @@ global.fishPondDefinitions = [
         minPopulation: 6,
         item: "automobility:dash_panel",
         count: 16,
-        chance: 0.11,
+        chance: 0.09,
       },
       {
         minPopulation: 8,
@@ -2602,7 +2602,7 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "society:pristine_tigerseye", count: 1 },
-          { item: "society:mini_oni_eye", count: 1 },
+          { item: "botania:ender_eye_block", count: 8 },
           { item: "minecraft:eye_armor_trim_smithing_template", count: 1 },
         ],
       },
@@ -3029,7 +3029,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "minecraft:oak_log", count: 64 },
-          { item: "treetap:tap", count: 8 },
+          { item: "society:tapper", count: 8 },
           { item: "minecraft:dark_oak_log", count: 64 },
         ],
       },
@@ -3292,7 +3292,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "atmospheric:orange", count: 16 },
-          { item: "unusualfishmod:relucent_shard", count: 4 },
+          { item: "veggiesdelight:bellpepper", count: 32 },
           { item: "create:ochrum", count: 64 },
         ],
       },
@@ -3300,7 +3300,7 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "bakery:bundt_cake", count: 32 },
-          { item: "unusualfishmod:crimson_shard", count: 4 },
+          { item: "vintagedelight:pickled_pepper", count: 32 },
           { item: "create:crimsite", count: 64 },
         ],
       },
@@ -3448,7 +3448,7 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "moreminecarts:chunkrodite_block", count: 16 },
           { item: "moreminecarts:chunkrodite", count: 48 },
-          { item: "unusualfishmod:tendril", count: 4 },
+          { item: "society:sparkstone", count: 16 },
         ],
       },
       {

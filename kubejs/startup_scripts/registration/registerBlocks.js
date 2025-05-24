@@ -64,16 +64,6 @@ StartupEvents.registry("block", (e) => {
       });
     });
 
-  // e.create("society:boulder")
-  //   .defaultCutout()
-  //   .soundType("stone")
-  //   .hardness(4.5)
-  //   .resistance(9.0)
-  //   .requiresTool(true)
-  //   .tagBlock("minecraft:mineable/pickaxe")
-  //   .tagBlock("minecraft:needs_stone_tool")
-  //   .model("society:block/boulder");
-
   e.create("society:geode_node")
     .box(4, 0, 4, 12, 9, 12)
     .defaultCutout()
@@ -107,6 +97,61 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_diamond_tool")
     .model("society:block/omni_geode_node");
 
+  e.create("society:sparkstone_ore")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/sparkstone_ore");
+
+  e.create("society:deepslate_sparkstone_ore")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/deepslate_sparkstone_ore");
+
+  // Skull Cavern
+  const createBoulder = (type) => {
+    e.create(`society:${type}_boulder`)
+      .texture("up", `society:block/${type}_boulder_top`)
+      .texture("down", `society:block/${type}_boulder`)
+      .texture("north", `society:block/${type}_boulder`)
+      .texture("east", `society:block/${type}_boulder`)
+      .texture("south", `society:block/${type}_boulder`)
+      .texture("west", `society:block/${type}_boulder`)
+      .texture("particle", `society:block/${type}_boulder`)
+      .soundType("stone")
+      .hardness(2)
+      .resistance(1.0)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .tagBlock("minecraft:needs_iron_tool");
+  };
+  createBoulder("stone");
+  createBoulder("ice");
+  createBoulder("sandstone");
+  createBoulder("blackstone");
+
+  const createSkullVariant = (type, path) => {
+    e.create(`society:skull_${type}`)
+      .defaultCutout()
+      .soundType("stone")
+      .hardness(-1)
+      .resistance(3600000)
+      .requiresTool(true)
+      .textureAll(path);
+  };
+  createSkullVariant("stone", "minecraft:block/stone");
+  createSkullVariant("permafrost", "quark:block/permafrost");
+  createSkullVariant("sandstone", "minecraft:block/sandstone");
+  createSkullVariant("blackstone", "minecraft:block/blackstone");
+  
   // Drinks
   e.create("society:espresso")
     .box(6, 0, 6, 10, 4, 10)
@@ -284,7 +329,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .model("society:block/drinks/beer_attunecore")
     .item((item) => {
-    item.modelJson({
+      item.modelJson({
         parent: "minecraft:item/generated",
         textures: {
           layer0: "society:item/drinks/beer_attunecore",
@@ -461,6 +506,14 @@ StartupEvents.registry("block", (e) => {
     });
 
   // Compressed Crops block
+    e.create("society:animal_feed_sack", "cardinal")
+    .model("society:block/animal_feed_sack")
+    .mapColor("dirt")
+    .soundType("sand")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(false)
+
   e.create("herbalbrews:coffee_beans_sack")
     .texture("up", "quark:block/cocoa_beans_sack_top")
     .texture("down", "quark:block/cocoa_beans_sack_bottom")

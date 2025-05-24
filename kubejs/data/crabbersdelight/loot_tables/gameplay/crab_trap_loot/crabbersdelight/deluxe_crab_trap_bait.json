@@ -67,11 +67,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "twigs:bronzed_seashell",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
           "weight": 6,
           "name": "crabbersdelight:coral_fragments"
         },
