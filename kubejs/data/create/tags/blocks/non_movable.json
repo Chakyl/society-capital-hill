@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "sophisticatedstorage:chest",
+      "required": true
+    },
+    {
+      "id": "sophisticatedstorage:copper_chest",
+      "required": true
+    },
+    {
+      "id": "sophisticatedstorage:iron_chest",
+      "required": true
+    },
+    {
+      "id": "sophisticatedstorage:gold_chest",
+      "required": true
+    },
+    {
+      "id": "sophisticatedstorage:diamond_chest",
+      "required": true
+    },
+    {
+      "id": "sophisticatedstorage:netherite_chest",
+      "required": true
+    }
+  ]
+}

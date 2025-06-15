@@ -55,11 +55,11 @@
     },
 
     "aquaculture:minnow": {
-      "idle_time": 1,
-      "top_speed": 2,
-      "up_acceleration": 0.6,
-      "down_acceleration": 0.6,
-      "avg_distance": 25,
+      "idle_time": 200,
+      "top_speed": 1,
+      "up_acceleration": 0.2,
+      "down_acceleration": 0.2,
+      "avg_distance": 20,
       "move_variation": 10
     },
 

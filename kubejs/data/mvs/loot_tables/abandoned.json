@@ -72,6 +72,10 @@
           },
           {
             "type": "minecraft:item",
+            "name": "farm_and_charm:pitchfork"
+          },
+          {
+            "type": "minecraft:item",
             "name": "minecraft:gold_nugget",
             "functions": [
               {

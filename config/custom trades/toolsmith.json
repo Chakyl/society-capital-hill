@@ -10,12 +10,12 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:bevel",
+        "itemKey": "numismatics:sprocket",
         "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -28,12 +28,12 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:bevel",
+        "itemKey": "numismatics:sprocket",
         "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -46,12 +46,12 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:sprocket",
-        "amount": 2,
+        "itemKey": "numismatics:cog",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -65,11 +65,11 @@
       },
       "request": {
         "itemKey": "numismatics:sprocket",
-        "amount": 1,
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -83,11 +83,11 @@
       },
       "request": {
         "itemKey": "numismatics:cog",
-        "amount": 2,
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -100,12 +100,12 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:bevel",
+        "itemKey": "numismatics:sprocket",
         "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -239,7 +239,7 @@
     },
     {
       "offer": {
-        "itemKey": "mining_dimension:teleporter",
+        "itemKey": "society:skull_cavern_teleporter",
         "amount": 1,
         "priceModifier": 0
       },
@@ -439,42 +439,6 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:toolsmith_impact_core_for_ancient_coin"
-    },
-    {
-      "offer": {
-        "itemKey": "justhammers:reinforced_impact_core",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:ancient_coin",
-        "amount": 8,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:toolsmith_reinforced_impact_core_for_ancient_coin"
-    },
-    {
-      "offer": {
-        "itemKey": "justhammers:destructor_core",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:ancient_coin",
-        "amount": 16,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:toolsmith_destructor_core_for_ancient_coin"
     }
   ]
 }

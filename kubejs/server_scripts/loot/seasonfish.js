@@ -11,7 +11,7 @@ const convertToLootEntry = (entries, insertNeptuna) => {
     pool.push(LootEntry.of(fish).withWeight(weight));
   });
   if (insertNeptuna)
-    pool.push(LootEntry.of("society:neptuna").withWeight(Math.floor(weights * 0.15)));
+    pool.push(LootEntry.of("society:neptuna").withWeight(Math.floor(weights * 0.09)));
   return pool;
 };
 
@@ -161,6 +161,8 @@ LootJS.modifiers((e) => {
     false,
     false
   );
+
+  createSeasonLootTable(e, "spring", global.springOcean, global.springRiver, global.springFresh);
   createSeasonLootTable(
     e,
     "spring",
@@ -307,7 +309,6 @@ LootJS.modifiers((e) => {
   );
 
   // + Fish skills
-
   e.addLootTableModifier("minecraft:gameplay/fishing")
     .hasAnyStage("fly_fisher")
     .modifyLoot(Ingredient.all, (itemStack) => {

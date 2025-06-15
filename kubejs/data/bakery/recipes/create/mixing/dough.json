@@ -1,20 +1,21 @@
 {
-    "type": "create:mixing",
-    "results": [
-        {
-            "item": "farm_and_charm:dough"
-        }
-    ],
-    "ingredients": [
-        {
-            "item": "farm_and_charm:flour"
-        },
-        {
-            "item": "farm_and_charm:yeast"
-        },
-        {
-            "amount": 250,
-            "fluid": "minecraft:water"
-        }
-    ]
+  "type": "create:mixing",
+  "results": [
+    {
+      "item": "farm_and_charm:dough",
+      "count": 5
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "farm_and_charm:flour"
+    },
+    {
+      "item": "farm_and_charm:yeast"
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:water"
+    }
+  ]
 }

@@ -34,7 +34,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -52,7 +52,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -70,7 +70,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -88,7 +88,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -106,7 +106,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -124,7 +124,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -142,7 +142,7 @@
         "priceModifier": 0
       },
       "tradeExp": 4,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -160,7 +160,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -178,7 +178,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -196,7 +196,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -214,7 +214,7 @@
         "priceModifier": 0
       },
       "tradeExp": 4,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -232,7 +232,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -250,7 +250,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,

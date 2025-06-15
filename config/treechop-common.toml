@@ -158,8 +158,8 @@
 			leaves = ["#forge:mushroom_caps"]
 
 		[compatibility.trees.hugeFungi]
-			logs = ["#minecraft:crimson_stems", "#minecraft:warped_stems"]
-			leaves = ["#minecraft:wart_blocks", "minecraft:shroomlight"]
+			logs = []
+			leaves = []
 
 		[compatibility.trees.problematicLeavesTrees]
 			logs = ["tropicraft:.*_log(_.*)?", "mysticbiomes:.*_log", "betternether:.*_bark", "betternether:.*_log", "alexscaves:.*_log", "alexscaves:pewen_wood", "beachparty:palm_log"]
